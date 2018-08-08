@@ -48,8 +48,8 @@ Less easy to understand:
 
         .child {
             font-size: 0.75em; /* 12px */
-            padding-bottom: 1em; /* 12px - confusing! because it's relative to the current font-size, 0.5em, which is 12px. */
-            background: lightblue;
+            padding-bottom: 1em; /* 12px - confusing! because it's relative to the current font-size, 
+            0.5em, which is 12px. */
         }
 
     </style>
@@ -65,9 +65,11 @@ Less easy to understand:
 
 
 Further reading: 
-https://developer.mozilla.org/en-US/docs/Web/CSS/length
-https://engageinteractive.co.uk/blog/em-vs-rem-vs-px
-https://zellwk.com/blog/rem-vs-em/
+<ul>
+    <li>https://developer.mozilla.org/en-US/docs/Web/CSS/length</li>
+    <li>https://engageinteractive.co.uk/blog/em-vs-rem-vs-px</li>
+    <li>https://zellwk.com/blog/rem-vs-em/</li>
+</ul>
 
 
 
