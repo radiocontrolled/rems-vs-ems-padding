@@ -27,15 +27,13 @@ REMs are not supported in IE8: https://caniuse.com/#search=REMs
 <hr/>
 
 ## EMs
-An EM represents a size relative to its parent element's font size. i.e. a calculated font-size.
+"Represents the calculated font-size of the element. If used on the font-size property itself, it represents the inherited font-size of the element."(MDN)
 
 ### Advantages
 Allows for more modularity of components, because spacing will be relative to local font size. 
 
 ### Disadvantages
-In the case of an application like Simorgh that has a lot of nested components, implementing padding in EMs could be trickier in terms of making sure components don't compound or inherit padding inadvertantly.  
-
-Less easy to understand: 
+Potential complexity of understanding due to nesting components, depending on how font size is implemented. It's harder to immediately understand what the current font size is that the EM is relative to: 
 ```
     <style>
         .parent {
