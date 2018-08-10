@@ -1,9 +1,7 @@
 # REMs vs EMs
 EMs and REMs is are both flexible / rezisable. This spike compares their use as units for spacing. 
 
-
 ## REMs
-
 The REM unit represents a size relative to the root element (e.g., the `font-size` of `<html>`). Combined with the root element's font-size, a REM represents the root element's initial value. 
 
 ### Advantages
@@ -61,8 +59,11 @@ Potential complexity of understanding due to nesting components, depending on ho
 
 ```
 
+## a11y
+* REMs and EMs are resisable. Both are established for use in production.
+* Regardless of the unit chosen, we must set a default font-size in a resisable unit, i.e., `font-size: 100%` on the `html` element; supported user agents will allow text resizing (which will have a knock-on effect for padding/margin resizing). Setting a default font size in a resisable unit partially satisfies http://www.bbc.co.uk/guidelines/futuremedia/accessibility/html/resize-zoom.shtml; there isn't a standard per se for padding and margins.
 
-Further reading: 
+## Further reading: 
 <ul>
     <li>https://developer.mozilla.org/en-US/docs/Web/CSS/length</li>
     <li>https://engageinteractive.co.uk/blog/em-vs-rem-vs-px</li>
